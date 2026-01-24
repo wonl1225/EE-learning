@@ -38,7 +38,11 @@ Sampling rate directly represents the number of discrete measurements from a sig
 
 Such result imply that there is a minimum sampling rate to observe a oscillatory behaviour of a signal. This behaviour is related to the Nyquist-Shannon sampling theorem, which was researched through Stanford Engineering's EE261 online course materials.
 
+
+
 The fundamental idea is that the signal should be sampled at a rate of at least twice of its highest frequency--which is referred as a Nyquist rate--in order to produce an accurate graph. In this simulation, the signal frequency was set to 8 Hz, which means that we need at least 16 Hz(Nyquist rate) to produce a proper graph. As the lecture mentions, if this condition is not satisfied, you simply cannot get back the original function. The simulations we obtained clearly demonstrate the Nyquist-Shannon sampling theorem, where the signal preserve a sinusoidal waveform at 25 Hz and 50 Hz(fs > 16), but fail to construct a properly-leading signal due to distortion at 5 Hz and 10 Hz(fs < 16). 
+
+
 
 Such failure to produce a proper graph is known as aliasing. Sampling below the Nyquist rate, the original high-frequency information "folds" into the lower-frequency and cause the "images" of the signal in the frequency domain to overlap. As aliasing is caused, the high-frequency data gets mixed up with lower frequency and the original function is mathematically lost.
 
@@ -69,10 +73,15 @@ Such results from the simulation emphasize why maintaining a high sampling frequ
 -----------
 
 ## Contributors
+
 **Won Lee** - Project Lead, Graphical Analysis, Theoretical Research, Technical Writing
+
 **Ron Macarilay** - Data Visualization, Signal Processing, Documentation
 
 ## References
+
 MIT OpenCourseWare – Signals and Systems, Lecture 16
+
 Stanford Engineering Everywhere(SEE) - EE261 - The Fourier Transform and its Applications, Lecture 18
+
 Matplotlib Document - https://matplotlib.org/
