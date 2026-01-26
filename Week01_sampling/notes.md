@@ -34,7 +34,7 @@ Same sinusoidal graph were plotted using four different sampling rates.
 
 ## Explanations
 
-Sampling rate directly represents the number of discrete measurements from a signal over a certain interval. This means when the signal is the sampling rate is too low, the signal becomes distorted. Due to the lack of points to capture true waveform of the graph, the computer simply connects these measurements linearly. At lower sampling rates like 5 Hz and 10 Hz, the sinusoidal waveform isn't visible due to lack of captured points. Instead of a smooth, oscillating graph, heavy distortions can be observed. At higher sampling rates such as 25 Hz and 50 Hz, the graph starts to smoothen out because of the increased captured points. 
+Sampling rate directly represents the number of discrete measurements from a signal over a certain interval. This means when the signal of the sampling rate is too low, the signal becomes distorted. Due to the lack of points to capture true waveform of the graph, the computer simply connects these measurements linearly. At lower sampling rates like 5 Hz and 10 Hz, the sinusoidal waveform isn't visible due to lack of captured points. Instead of a smooth, oscillating graph, heavy distortions can be observed. At higher sampling rates such as 25 Hz and 50 Hz, the graph starts to smoothen out because of the increased captured points. 
 
 Such result imply that there is a minimum sampling rate to observe a oscillatory behaviour of a signal. This behaviour is related to the Nyquist-Shannon sampling theorem, which was researched through Stanford Engineering's EE261 online course materials.
 
