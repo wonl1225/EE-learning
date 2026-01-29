@@ -24,7 +24,7 @@ For a given charge of 5 pC, the theoratical value of the total electric flux is 
 ## Observations
 Cube - Centered Charge: At minimal division count, the calculated electric flux deviated the furthest compared to the rest of the points. As number of divisions increased, this calculation stabilized, steadily converging towards our controlled electric flux. At the higher division counts, change in our flux appears to be smaller. However, this slow increase still persists the convergence towards our numerical flux value.
 
- Cube - Off Centered Charge: The flux calculated at ten divions exhibits clear deviation compared to the patterned convergence lower and higher
+ Cube - Off Centered Charge: The fewest division count displayed a much closer calculation of the flux than that of the least observed in the center charge cube. This was not maintained as the flux calculated at ten divisions exhibits clear deviation compared to the patterned convergence that higher points share.
 ## Explanations
 
 
