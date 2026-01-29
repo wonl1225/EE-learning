@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Constants
 e0 = 8.854e-12  # ε0
-Q = 5e-9        # Controlled charge, 5pC
+Q = 5e-9        # Controlled charge, 5nC
 L = 1.0         # Length of a cube, 1 m
 
 # Function for flux calculation
@@ -128,3 +128,4 @@ print(f"Percentage error of off-centered charge at divs = 100: {error:.2f}%")
 
 
 plt.show()
+
