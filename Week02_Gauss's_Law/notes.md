@@ -30,7 +30,7 @@ Cube - Off Centered Charge:
 
 The fewest division count displayed a much closer calculation of the flux than that of the least observed in the center charge cube. This was not maintained as the flux calculated at ten divisions exhibits clear deviation compared to the patterned convergence that higher points share. The relative convergence of this scenario started at an overestimation. The higher divisions show little change in flux, similar to the cube centered charge.
 ## Explanations
-
+At the ten division point, the off centered cube experienced aliasing. This phenomenon happens in low division because of its high area of calculation. With the charge being off cenetered, small changes in the surface area procudes high eletric field values. Due to bigger division calculations, this can overlook a lot of needed values that just get overlooked than being taken accounted for.
 
 ## Limitations
 
