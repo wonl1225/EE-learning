@@ -22,7 +22,7 @@ For a given charge of 5 pC, the theoratical value of the total electric flux is 
 - Irregular closed surface
 
 ## Observations
-
+Charge Cenetered Cube: At low divisions the calculated flux 
 
 ## Explanations
 
