@@ -22,8 +22,9 @@ For a given charge of 5 pC, the theoratical value of the total electric flux is 
 - Irregular closed surface
 
 ## Observations
-Charge-Centered Cube: At our lowest division, the calculated electric flux  
+Cube - Centered Charge: At minimal division count, the calculated electric flux deviated the furthest compared to the rest of the points. As number of divisions increased, this calculation stabilized, steadily converging towards our controlled electric flux. At the higher division counts, change in our flux appears to be smaller. However, this slow increase still persists the convergence towards our numerical flux value.
 
+ Cube - Off Centered Charge: The flux calculated at ten divions exhibits clear deviation compared to the patterned convergence lower and higher
 ## Explanations
 
 
