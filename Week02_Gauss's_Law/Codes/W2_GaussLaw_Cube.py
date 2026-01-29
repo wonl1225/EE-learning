@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Constants
 e0 = 8.854e-12  # ε0
-Q = 5e-9        # Controlled charge, 5nC
+Q = 5e-9        # Controlled charge, 5pC
 L = 1.0         # Length of a cube, 1 m
 
 # Function for flux calculation
@@ -98,7 +98,7 @@ off_centered = []           # Empty list for off-centered charge
 
 # Position of the charge
 pos_center = np.array([0.0, 0.0, 0.0])      # Right at the center
-pos_off = np.array([0.45, 0.45, 0.45])         # Off by 0.45, which is very close to a surface
+pos_off = np.array([0.45, 0.45, 0.45])         # Off by 0.45, charge is very close to a surface
 
 # Integration
 for div in divs:
@@ -124,6 +124,7 @@ plt.savefig("GaussLaw_Cube.png", dpi=300)
 # Print Errors for the highest resolution
 error = abs(off_centered[-1] - theo) / theo * 100
 print(f"Percentage error of off-centered charge at divs = 100: {error:.2f}%")
+
 
 
 plt.show()
