@@ -22,9 +22,13 @@ For a given charge of 5 pC, the theoratical value of the total electric flux is 
 - Irregular closed surface
 
 ## Observations
-Cube - Centered Charge: At minimal division count, the calculated electric flux deviated the furthest compared to the rest of the points. The relative convergence is an underestimation. As number of divisions increased, this calculation stabilized, steadily converging towards our controlled electric flux. At the higher division counts, change in our flux appears to be smaller. However, this slow increase still persists the convergence towards our numerical flux value.
+Cube - Centered Charge:
 
- Cube - Off Centered Charge: The fewest division count displayed a much closer calculation of the flux than that of the least observed in the center charge cube. This was not maintained as the flux calculated at ten divisions exhibits clear deviation compared to the patterned convergence that higher points share. The relative convergence of this scenario started at an overestimation. The higher divisions show little change in flux, similar to the cube centered charge.
+At minimal division count, the calculated electric flux deviated the furthest compared to the rest of the points. The relative convergence is an underestimation. As number of divisions increased, this calculation stabilized, steadily converging towards our controlled electric flux. At the higher division counts, change in our flux appears to be smaller. However, this slow increase still persists the convergence towards our numerical flux value.
+
+Cube - Off Centered Charge:
+
+The fewest division count displayed a much closer calculation of the flux than that of the least observed in the center charge cube. This was not maintained as the flux calculated at ten divisions exhibits clear deviation compared to the patterned convergence that higher points share. The relative convergence of this scenario started at an overestimation. The higher divisions show little change in flux, similar to the cube centered charge.
 ## Explanations
 
 
