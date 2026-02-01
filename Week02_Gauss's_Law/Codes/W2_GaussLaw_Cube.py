@@ -128,7 +128,7 @@ plt.ylabel('Electric Flux')
 plt.legend()
 plt.grid()
 
-plt.savefig("GaussLaw_Cube2.png", dpi=300)
+plt.savefig("GaussLaw_Cube.png", dpi=300)
 
 # Print Errors for the highest resolution
 error = abs(off_centered[-1] - theo) / theo * 100
@@ -136,4 +136,5 @@ print(f"Percentage error of off-centered charge at divs = 100: {error:.2f}%")
 
 
 plt.show()
+
 
