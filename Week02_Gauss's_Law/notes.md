@@ -44,10 +44,12 @@ $$
 
 This convergence towards $$\frac{Q_{\text{enc}}}{\varepsilon_0}$$ , is proof enough of gauss's law as we see it approximate closer and closer towards a continuous surface integral.
 
-When the charge is in the center of the cube, the approximation occurs more rapidly. This is due to a more uniform field distribution and its fair symmetry compared to the other scenarios. When the charge is off centered, sharper increases and decreases of field per area makes approximation more difficult to converge. A charge outside of our designated cube has a net zero flux through all tested divisions. This proves that the charge's field passes through the gaussian surface and exits through the opposite side. This means a net zero flux on a surface can't disprove the existence of the charge. In this scenario, Gauss's law cannot work due to one of its requirements being broken, there is no charge enclosed by the cube.
+When the charge is in the center of the cube, the approximation occurs more rapidly. This is due to a more uniform field distribution and its fair symmetry compared to the other scenarios. When the charge is off centered, sharper increases and decreases of field per area makes approximation more difficult to converge. While this effects the lower division calculations, it will still converge to the controlled flux with higher divisions. A charge outside of our designated cube has a net zero flux through all tested divisions. This proves that the charge's field passes through the gaussian surface and exits through the opposite side. This means a net zero flux on a surface can't disprove the existence of the charge. In this scenario, Gauss's law cannot work due to one of its requirements being broken, there is no charge enclosed by the cube.
+
+Gauss's law is proven with these three scenarios, if divisions were made to be infinitesimally smaller, the calculated value would be exactly the same. This would mean it doesn't take into account position of charge inside the enclosed surface. This also proves how charges outside of these enclosed surfaces does not affect eletric flux at all, Scenarios one and two will be ran the same even if a charge outside is now added.  
 
 ## Limitations
-This simulation assumes ideal electrostatic conditions. Electric field remains constant and time isn't considered. Electromagnetic waves and magnetic fields are not present to disrupt data. Tjis simulation cannot test Gauss's law in dynamic EM environments.
+This simulation assumes ideal electrostatic conditions. Electric field remains constant and time isn't considered. Electromagnetic waves and magnetic fields are not present to disrupt data. This simulation cannot test Gauss's law in dynamic EM environments.
 
 Approximation uses riemann's sum instead of Gauss's law. This means lower resolution strays far from the designated value. Aliasing has to be considered which is not ideal to the data.
 
@@ -59,9 +61,12 @@ This simulation verifies Gauss's Law, demonstrating that the total electric flux
 
 **Won Lee** - Code Development, Graphical Analysis, Numerical Simulation
 
-**Ron Macarilay**
+**Ron Macarilay** - Project Lead, Technical Writing, Theoretical Research, Graphical Analysis
 
 ## References
+MIT OpenCourseWare - Physics II: Electricity and Magnetism, Lecture 2
+
+UOFC PHYS 259 Textbook - University Physics Volume 2, Unit 2: Electricty and Magnetism, Chapter 6 (Pg. 229 - 245)
 
 Matplotlib Document - https://matplotlib.org/
 
