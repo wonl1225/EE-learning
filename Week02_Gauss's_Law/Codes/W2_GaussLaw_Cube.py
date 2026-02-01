@@ -102,7 +102,7 @@ outside = []                # Empty list for a charge outside of the cube
 # Position of the charge
 pos_center = np.array([0.0, 0.0, 0.0])      # Right at the center
 pos_off = np.array([0.45, 0.45, 0.45])      # Off by 0.45, which is very close to a surface
-pos_outside = np.array([0.8, 0.8, 0.8])     # Completely outside of the cube
+pos_outside = np.array([1.5, 1.5, 1.5])     # Completely outside of the cube
 
 # Integration
 for div in divs:
@@ -128,7 +128,7 @@ plt.ylabel('Electric Flux')
 plt.legend()
 plt.grid()
 
-plt.savefig("GaussLaw_Cube.png", dpi=300)
+plt.savefig("GaussLaw_Cube2.png", dpi=300)
 
 # Print Errors for the highest resolution
 error = abs(off_centered[-1] - theo) / theo * 100
@@ -136,3 +136,4 @@ print(f"Percentage error of off-centered charge at divs = 100: {error:.2f}%")
 
 
 plt.show()
+
