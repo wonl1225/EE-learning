@@ -10,7 +10,7 @@ L = 1.0         # Length of a cube, 1 m
 def flux_calculation(position_charge, div):
     """
     This function executes flux calculation for the cubic Gaussian surface using integration.
-    Method of Riemann sum was to approximate E · dA for all the 6 sides of the cube.
+    Method of Riemann sum was used to approximate E · dA for all the 6 sides of the cube.
     
     :param position_charge: Position of the charge in a 3-dimensional space, indicated with (x, y, z) coordinates
     :param div: number of divisions on one side
@@ -92,26 +92,35 @@ def flux_calculation(position_charge, div):
 # Simulation
 divs = range(5, 105, 5)     # Sampled at various resolutions
 theo = Q / e0               # Theoratical electric flux calculated through Gauss's law, 564.717 Vm
+theo_out = 0                # Theoratical electric flux outside of the cube should be 0 Vm
+
 
 centered = []               # Empty list for centered charge
 off_centered = []           # Empty list for off-centered charge
+outside = []                # Empty list for a charge outside of the cube
 
 # Position of the charge
 pos_center = np.array([0.0, 0.0, 0.0])      # Right at the center
-pos_off = np.array([0.45, 0.45, 0.45])         # Off by 0.45, charge is very close to a surface
+pos_off = np.array([0.45, 0.45, 0.45])      # Off by 0.45, which is very close to a surface
+pos_outside = np.array([0.8, 0.8, 0.8])     # Completely outside of the cube
 
 # Integration
 for div in divs:
     centered.append(flux_calculation(pos_center, div))
     off_centered.append(flux_calculation(pos_off, div))
+    outside.append(flux_calculation(pos_outside, div))
 
 
 # Plot the executed results
 plt.plot(divs, centered, 'o-', label='centered', color='blue')
 plt.plot(divs, off_centered, 'x--', label='off-centered', color='red')
+plt.plot(divs, outside, 's-.', label='charge outside', color = 'purple')
+
 
 # plt.axhline adds a horizontal reference line, y = theoratical
 plt.axhline(theo, linestyle='--', label='Φ', color='black')
+plt.axhline(theo_out, linestyle=':', label='Φ = 0', color='gray')
+
 
 plt.xlabel('Divisions')
 plt.ylabel('Electric Flux')
@@ -126,6 +135,4 @@ error = abs(off_centered[-1] - theo) / theo * 100
 print(f"Percentage error of off-centered charge at divs = 100: {error:.2f}%")
 
 
-
 plt.show()
-
