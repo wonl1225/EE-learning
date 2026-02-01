@@ -47,10 +47,12 @@ This convergence towards $$\frac{Q_{\text{enc}}}{\varepsilon_0}$$ , is proof eno
 When the charge is in the center of the cube, the approximation occurs more rapidly. This is due to a more uniform field distribution and its fair symmetry compared to the other scenarios. When the charge is off centered, sharper increases and decreases of field per area makes approximation more difficult to converge. A charge outside of our designated cube has a net zero flux through all tested divisions. This proves that the charge's field passes through the gaussian surface and exits through the opposite side. This means a net zero flux on a surface can't disprove the existence of the charge. In this scenario, Gauss's law cannot work due to one of its requirements being broken, there is no charge enclosed by the cube.
 
 ## Limitations
+This simulation assumes ideal electrostatic conditions. Electric field remains constant and time isn't considered. Electromagnetic waves and magnetic fields are not present to disrupt data. Tjis simulation cannot test Gauss's law in dynamic EM environments.
 
+Approximation uses riemann's sum instead of Gauss's law. This means lower resolution strays far from the designated value. Aliasing has to be considered which is not ideal to the data.
 
 ## Conclusion
-
+This simulation verifies Gauss's Law, demonstrating that the total electric flux on an enclosed surface depends only on the enclosed charge. It proved the convergence towards our fixed value as divisions increased and assured a charge outside resulted in a flux of zero. This verifies that the position inside the surface and its shape is not an important attribute. Gauss's law is important in reak world engineering because it helps predict electric field behaviour in practical systems. It is used in capacitor design, which needs to be able to store electric charges within an electric field. Simulating Gauss's law highlights the role of computational modeling to analyze electrical systems before building real hardware.
 
 -----
 ## Contributors
