@@ -54,7 +54,7 @@ This simulation assumes ideal electrostatic conditions. Electric field remains c
 Approximation uses riemann's sum instead of Gauss's law. This means lower resolution strays far from the designated value. Aliasing has to be considered which is not ideal to the data.
 
 ## Conclusion
-This simulation verifies Gauss's Law, demonstrating that the total electric flux on an enclosed surface depends only on the enclosed charge. It proved the convergence towards our fixed value as divisions increased and assured a charge outside resulted in a flux of zero. This verifies that the position inside the surface and its shape is not an important attribute. Gauss's law is important in reak world engineering because it helps predict electric field behaviour in practical systems. It is used in capacitor design, which needs to be able to store electric charges within an electric field. Simulating Gauss's law highlights the role of computational modeling to analyze electrical systems before building real hardware.
+This simulation verifies Gauss's Law, demonstrating that the total electric flux on an enclosed surface depends only on the enclosed charge. It proved the convergence towards our fixed value as divisions increased and assured a charge outside resulted in a flux of zero. This verifies that the position inside the surface and its shape is not an important attribute. Gauss's law is important in real world engineering because it helps predict electric field behaviour in practical systems. It is used in capacitor design, which needs to be able to store electric charges within an electric field. Simulating Gauss's law highlights the role of computational modeling to analyze electrical systems before building real hardware.
 
 -----
 ## Contributors
